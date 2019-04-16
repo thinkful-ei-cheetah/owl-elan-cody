@@ -7,12 +7,17 @@ import Chat from './Chat';
 import chatEvents from './chat-events'
 
 class App extends Component {
+  handleClick = () =>{
+    return {"chats hidden":"hidden"}
+  }
   render() {
     return (
       <React.Fragment>
-        <ul class = "sidenav">
-          <li><a href="#">Chat</a></li>
-          <li><a href="#">Participants</a></li>
+        <ul className = "sidenav">
+        <div className="button-container">
+          <button className="chat" onClick={this.handleClick}>Chat</button>
+          <button className="participants" >Participants</button>
+        </div>
           <Participant store = {participants} />
           <Chat chats = {chatEvents} participants = {participants} />
         </ul>

@@ -13,8 +13,8 @@ function Chat({chats, participants}) {
         const participant = participants.find(participant => participant.id === chat.participantId)
         return (
         <div className="content">
-            <span>{participant.name}</span>
             <img src ={participant.avatar} alt = {participant.name}/>
+            <p>{participant.name}</p>
             <span>{chat.type === 'message' ? chat.message : chat.type}</span>
             <span>{new Date(chat.timestamp).toISOString()}</span>
         </div>
@@ -25,7 +25,7 @@ function Chat({chats, participants}) {
     console.log(chatList)
     
     return (
-            <div className="chats hidden">
+            <div className="chat-hidden">
                 {chatList}
             </div>    
     )

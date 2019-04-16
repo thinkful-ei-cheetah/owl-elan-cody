@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stage Participants renders UI as expected 1`] = `
+<div
+  className="chats hidden"
+>
+  <div
+    className="content"
+  >
+    <span>
+      Axe Kubicka
+    </span>
+    <img
+      alt="Axe Kubicka"
+      src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+    />
+    <span>
+      Hello world
+    </span>
+    <span>
+      2019-01-30T12:48:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Caty Flucker
+    </span>
+    <img
+      alt="Caty Flucker"
+      src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+    />
+    <span>
+      thumbs-up
+    </span>
+    <span>
+      2019-01-30T12:48:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Frank Runciman
+    </span>
+    <img
+      alt="Frank Runciman"
+      src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+    />
+    <span>
+      thumbs-down
+    </span>
+    <span>
+      2019-01-30T12:48:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Koren Templeton
+    </span>
+    <img
+      alt="Koren Templeton"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    <span>
+      raise-hand
+    </span>
+    <span>
+      2019-01-30T12:49:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Koren Templeton
+    </span>
+    <img
+      alt="Koren Templeton"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    <span>
+      clap
+    </span>
+    <span>
+      2019-01-30T12:49:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Koren Templeton
+    </span>
+    <img
+      alt="Koren Templeton"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    <span>
+      join
+    </span>
+    <span>
+      2019-01-30T12:49:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Ashla Attwool
+    </span>
+    <img
+      alt="Ashla Attwool"
+      src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+    />
+    <span>
+      leave
+    </span>
+    <span>
+      2019-01-30T12:50:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Axe Kubicka
+    </span>
+    <img
+      alt="Axe Kubicka"
+      src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+    />
+    <span>
+      join-stage
+    </span>
+    <span>
+      2019-01-30T12:51:04.247Z
+    </span>
+  </div>
+  <div
+    className="content"
+  >
+    <span>
+      Axe Kubicka
+    </span>
+    <img
+      alt="Axe Kubicka"
+      src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+    />
+    <span>
+      leave-stage
+    </span>
+    <span>
+      2019-01-30T12:52:04.247Z
+    </span>
+  </div>
+</div>
+`;

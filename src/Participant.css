@@ -12,11 +12,15 @@ ul {
 
 ul li img {
     padding-right: 2em;
+    margin-bottom:10px;;
     max-width: 64px;
 }
 
 ul li {
     padding-top: 1em;
+}
+li button{
+    padding-right:15px;
 }
 
 ul li:nth-child(1) {
@@ -25,4 +29,8 @@ ul li:nth-child(1) {
 
 ul li:last-child {
     padding-bottom: 1em;
+}
+ul button{
+    display: flex;
+    flex-flow:row
 }
