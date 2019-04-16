@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stage Participants renders UI as expected 1`] = `
+<div
+  className="stage-container"
+>
+  <div
+    className="stage"
+  >
+    <img
+      alt="avatar"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    Koren Templeton
+  </div>
+  <div
+    className="stage"
+  >
+    <img
+      alt="avatar"
+      src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+    />
+    Ashla Attwool
+  </div>
+</div>
+`;
