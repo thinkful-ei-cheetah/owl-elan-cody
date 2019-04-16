@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Participant component renders UI as expected 1`] = `
+<ul>
+  <li>
+    <img
+      alt="avatar"
+      src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+    />
+    Koren Templeton
+    <br />
+    in session 
+  </li>
+  <li>
+    <img
+      alt="avatar"
+      src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+    />
+    Caty Flucker
+    <br />
+    in session 
+  </li>
+  <li>
+    <img
+      alt="avatar"
+      src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+    />
+    Axe Kubicka
+    <br />
+    left session
+  </li>
+  <li>
+    <img
+      alt="avatar"
+      src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+    />
+    Frank Runciman
+    <br />
+    in session 
+  </li>
+  <li>
+    <img
+      alt="avatar"
+      src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+    />
+    Ashla Attwool
+    <br />
+    in session 
+  </li>
+</ul>
+`;
