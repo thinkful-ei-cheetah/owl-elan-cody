@@ -15,9 +15,9 @@ function Participant({store}) {
         store.inSession = !store.inSession;
     }
     return (
-        <ul>
+        <div className="participants">
             {participantsArray}
-        </ul>
+        </div>    
     );
 }
 

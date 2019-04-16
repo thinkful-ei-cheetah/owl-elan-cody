@@ -1,49 +1,33 @@
 import React from 'react';
-import chatEvents from './chat-events';
-import participants from './participants';
+import './Chat.css';
 
 function Chat({chats, participants}) {
 
-    const getTime = chats.map(item => {
-        new Date(item.timestamps);
-    })
 
-    const participantsArray = participants.map(item => {
-        return [item.id, item.name, item.avatar];
-    });
+    const participantIds = participants.map(item => item.id);
 
-    console.log(participantsArray);
 
-    
-
-    const chatList = chats.map(item => (
-        <span>{item.participantId === participants.id ? [item.type, item.message, new Date(item.timestamp)] : null}</span>
-
-        )
-    )
-
-    // const getType = chats.map(item => {
-
-    // })
-
-    // const findById = function(items) {
-    //     items.find(item => item.id);
-    // }
-
-    // const participantsInChat = function(participants) {
-    //     participants.find(item => {
-    //         return {id: item.id, name: item.name, avatar: item.avatar}
-    //     });
-    // }
-    // const getNameFromChat = findById(chats);
-
-    // const nameList = getNameFromChat.map(item => {
-    //     console.log(item);
-    // })
-    return (
-        <div className="chat-container">
-            {chats.id === participants.id ? [chats.type, chats.message, new Date(chats.timestamp)] : null}
+    const chatList = chats
+    .filter(chat => participantIds.includes(chat.participantId))
+    .map(chat => {
+        const participant = participants.find(participant => participant.id === chat.participantId)
+        return (
+        <div className="content">
+            <span>{participant.name}</span>
+            <img src ={participant.avatar} alt = {participant.name}/>
+            <span>{chat.type === 'message' ? chat.message : chat.type}</span>
+            <span>{new Date(chat.timestamp).toISOString()}</span>
         </div>
+        )}
+
+    )
+    console.log(chats);
+    console.log(chatList)
+    
+    return (
+            <div className="chats hidden">
+                {chatList}
+            </div>    
     )
 
 }
