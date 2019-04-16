@@ -8,7 +8,12 @@ function Participant({store}) {
         <img src={item.avatar} alt = "avatar" />
         {item.name}<br />
         {item.inSession ? 'in session ' : 'left session'}
+        {item.onStage ? 'on stage' : null}
     </li>)
+    if (store.onStage && store.inSession) {
+        store.onStage = !store.onStage;
+        store.inSession = !store.inSession;
+    }
     return (
         <ul>
             {participantsArray}

@@ -2,6 +2,12 @@ ul {
     list-style-type: none;
     display: flex;
     flex-flow: column wrap;
+    border: 1px solid grey;
+    width: 20%;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    background-color: lightgrey;
 }
 
 ul li img {
@@ -15,4 +21,8 @@ ul li {
 
 ul li:nth-child(1) {
     padding-top: 0;
+}
+
+ul li:last-child {
+    padding-bottom: 1em;
 }
