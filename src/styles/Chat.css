@@ -1,3 +1,4 @@
+
 ul {
     list-style-type: none;
     display: flex;
@@ -9,11 +10,21 @@ ul {
     height: 100%;
     background-color: lightgrey;
 }
+.content{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+}
 
-ul li img {
-    padding-right: 2em;
-    margin-bottom:10px;;
+img {
+    display:flex;
+    justify-content: flex-start;
     max-width: 64px;
+}
+
+span{
+    display: flex;
+    margin-bottom:5px;
 }
 
 ul li {
@@ -33,4 +44,12 @@ ul li:last-child {
 ul button{
     display: flex;
     flex-flow:row
+}
+
+.chat-hidden {
+    margin-left: 1em;
+}
+
+.chat-hidden:last-child {
+    margin-bottom: 1em;
 }

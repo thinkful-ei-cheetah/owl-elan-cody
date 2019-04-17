@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
-import Participant from './Participant';
+import Participant from './components/Participant';
 import participants from './participants';
-import Stage from './Stage';
-import './App.css';
-import Chat from './Chat';
+import Stage from './components/Stage';
+import './styles/App.css';
+import Chat from './components/Chat';
 import chatEvents from './chat-events'
 
 class App extends Component {
-  handleClick = () =>{
-    return {"chats hidden":"hidden"}
+  state = {
+    chatOn: false
+  }
+  handleChatClick = (e) => {
+    if(document.querySelector(e.currentTarget) === ".chat") {
+      this.setState({ chatOn: !this.state.chatOn})
+    }
   }
   render() {
     return (
       <React.Fragment>
         <ul className = "sidenav">
-        <div className="button-container">
-          <button className="chat" onClick={this.handleClick}>Chat</button>
-          <button className="participants" >Participants</button>
+        <div className="button-container" onClick={this.handleClick}>
+          <button className="chat" >Chat</button>
+          <button className="participants"  >Participants</button>
         </div>
-          <Participant store = {participants} />
-          <Chat chats = {chatEvents} participants = {participants} />
+        {this.state.chatOn ? <Participant className="tablinks" store = {participants} /> : <Chat className="tablinks" chats = {chatEvents} participants = {participants} />}
+
         </ul>
-        <Stage store= {participants} />
+        <Stage className="tablinks" store= {participants} />
       </React.Fragment>
     );
   }

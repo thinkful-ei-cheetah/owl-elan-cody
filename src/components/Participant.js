@@ -1,5 +1,5 @@
 import React from 'react';
-import './Participant.css'
+import '../styles/Participant.css'
 
 
 function Participant({store}) {

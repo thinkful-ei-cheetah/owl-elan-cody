@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Stage.css";
+import "../styles/Stage.css";
 
 function Stage({store}) {
     const participantOnStage = store.map(item => item.onStage ?

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Chat.css';
+import '../styles/Chat.css';
 
 function Chat({chats, participants}) {
 
-
+    const timeOptions = { hour : '2-digit', minute: '2-digit' }
     const participantIds = participants.map(item => item.id);
 
 
@@ -14,9 +14,9 @@ function Chat({chats, participants}) {
         return (
         <div className="content">
             <img src ={participant.avatar} alt = {participant.name}/>
-            <p>{participant.name}</p>
+            <span><b>{participant.name}</b></span>
+            <span>{new Date(chat.timestamp).toLocaleString("en-US", timeOptions)}</span>
             <span>{chat.type === 'message' ? chat.message : chat.type}</span>
-            <span>{new Date(chat.timestamp).toISOString()}</span>
         </div>
         )}
 

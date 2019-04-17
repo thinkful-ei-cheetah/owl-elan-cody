@@ -1,9 +1,0 @@
-.button-container{
-    display:flex;
-    justify-content: flex-start;
-}
-.button-container button{
-    padding:10px;
-    font-size: 16px;
-    margin-right:25px;
-}
