@@ -10,8 +10,11 @@ class App extends Component {
   state = {
     chatOn: false
   }
-  handleChatClick = (e) => {
-    if(document.querySelector(e.currentTarget) === ".chat") {
+  
+  handleClick = () => {
+    const chatElement = document.getElementById("chat");
+    const chatClass = chatElement.getAttribute('id');
+    if(chatClass === "chat") {
       this.setState({ chatOn: !this.state.chatOn})
     }
   }
@@ -19,12 +22,11 @@ class App extends Component {
     return (
       <React.Fragment>
         <ul className = "sidenav">
-        <div className="button-container" onClick={this.handleClick}>
-          <button className="chat" >Chat</button>
-          <button className="participants"  >Participants</button>
+        <div className="button-container" onClick={this.handleClick} >
+          <button id="chat">Chat</button>
+          <button id="participants"  >Participants</button>
         </div>
-        {this.state.chatOn ? <Participant className="tablinks" store = {participants} /> : <Chat className="tablinks" chats = {chatEvents} participants = {participants} />}
-
+        {this.state.chatOn ? <Chat className="tablinks" chats = {chatEvents} participants = {participants} /> : <Participant className="tablinks" store = {participants} />}
         </ul>
         <Stage className="tablinks" store= {participants} />
       </React.Fragment>
